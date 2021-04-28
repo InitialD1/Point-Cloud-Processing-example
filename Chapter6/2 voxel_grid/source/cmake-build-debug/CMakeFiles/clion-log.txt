@@ -1,0 +1,63 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Volumes/Steve_Wen/Lidar/Project/Point-Cloud-Processing-example-master/Chapter6/2 voxel_grid/source"
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is AppleClang 11.0.3.11030032
+-- The CXX compiler identification is AppleClang 11.0.3.11030032
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Eigen: /usr/local/include/eigen3  
+-- Eigen found (include: /usr/local/include/eigen3, version: 3.3.7)
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found Boost: /usr/local/include (found suitable version "1.73.0", minimum required is "1.40.0") found components: system filesystem thread date_time iostreams chrono atomic regex 
+-- Found FLANN: /usr/local/Cellar/flann/1.9.1_9/lib/libflann_cpp.dylib  
+-- FLANN found (include: /usr/local/Cellar/flann/1.9.1_9/include, lib: optimized;/usr/local/Cellar/flann/1.9.1_9/lib/libflann_cpp.dylib;debug;/usr/local/Cellar/flann/1.9.1_9/lib/libflann_cpp.dylib)
+-- FLANN found (include: /usr/local/Cellar/flann/1.9.1_9/include, lib: optimized;/usr/local/Cellar/flann/1.9.1_9/lib/libflann_cpp.dylib;debug;/usr/local/Cellar/flann/1.9.1_9/lib/libflann_cpp.dylib)
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+CMake Warning (dev) at /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
+  The package name passed to `find_package_handle_standard_args` (libusb-1.0)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/local/share/pcl-1.9/PCLConfig.cmake:287 (find_package_handle_standard_args)
+  /usr/local/share/pcl-1.9/PCLConfig.cmake:332 (find_libusb)
+  /usr/local/share/pcl-1.9/PCLConfig.cmake:542 (find_external_library)
+  CMakeLists.txt:3 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found libusb-1.0: /usr/local/include  
+** WARNING ** io features related to libusb-1.0 will be disabled
+-- Found Qhull: optimized;/usr/local/lib/libqhull_p.dylib;debug;/usr/local/lib/libqhull_p.dylib  
+-- QHULL found (include: /usr/local/include, lib: optimized;/usr/local/lib/libqhull_p.dylib;debug;/usr/local/lib/libqhull_p.dylib)
+-- Found OpenGL: /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework   
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+CMake Error at /usr/local/share/pcl-1.9/PCLConfig.cmake:58 (message):
+  simulation is required but glew was not found
+Call Stack (most recent call first):
+  /usr/local/share/pcl-1.9/PCLConfig.cmake:361 (pcl_report_not_found)
+  /usr/local/share/pcl-1.9/PCLConfig.cmake:545 (find_external_library)
+  CMakeLists.txt:3 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Volumes/Steve_Wen/Lidar/Project/Point-Cloud-Processing-example-master/Chapter6/2 voxel_grid/source/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Volumes/Steve_Wen/Lidar/Project/Point-Cloud-Processing-example-master/Chapter6/2 voxel_grid/source/cmake-build-debug/CMakeFiles/CMakeError.log".
